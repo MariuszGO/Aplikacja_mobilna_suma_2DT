@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            >
+            <Label FontSize="30" Text="Podaj liczbę a: "></Label>
+            <Entry FontSize="30"  HorizontalOptions="Start" MinimumWidthRequest="150" MaximumWidthRequest="200" BackgroundColor="Aqua" x:Name="liczba_a"></Entry>
+            <Label FontSize="30" Text="Podaj liczbę b: "></Label>
+            <Entry FontSize="30" HorizontalOptions="Start" MinimumWidthRequest="150" MaximumWidthRequest="200" BackgroundColor="Aqua"  x:Name="liczba_b"></Entry>
+            <Button FontSize="30" Text="Oblicz sumę" Clicked="Oblicz_Sume"></Button>
+            <Label FontSize="30" x:Name="wynik"></Label>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
